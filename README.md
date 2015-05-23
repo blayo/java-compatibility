@@ -1,2 +1,8 @@
 # java-compatibility
-Add java api to bootclasspath when sourceCompatibility is set
+Add java api classes to bootclasspath when sourceCompatibility is se
+
+# usage
+
+apply plugin: java-compatibility
+
+sourceCompatibility = 1.6
