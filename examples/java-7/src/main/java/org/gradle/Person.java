@@ -7,6 +7,7 @@ public class Person {
 
     public Person(String name) {
         this.name = name;
+        Character.isAlphabetic(42);
         new GrowthList();
     }
 
@@ -16,5 +17,4 @@ public class Person {
     public String getName() {
         return name;
     }
-} 
- 
+}

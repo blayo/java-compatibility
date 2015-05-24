@@ -1,11 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-// Comment this line and uncomment the following one to see the warning
-// warning: [options] bootstrap class path not set in conjunction with -source 1.6
-apply plugin: 'java6-compatibility'
+apply plugin: 'java-compatibility'
 
-//sourceCompatibility = 1.6
+// Comment this line to remove the error due to java 7 specific method
+sourceCompatibility = 1.6
 
 version = '1.0'
 jar {
@@ -26,7 +25,7 @@ dependencies {
 
 buildscript {
     dependencies {
-        classpath group: 'com.ullink.gradle', name: 'java6-compatibility', version: '0.9'
+        classpath group: 'com.ullink.gradle', name: 'java-compatibility', version: '0.9'
     }
 }
 
