@@ -4,11 +4,11 @@ apply plugin: 'java-compatibility'
 
 version = '1.0'
 
-repositories {
-    mavenCentral()
-}
-
 buildscript {
+    repositories { 
+        mavenLocal()                                                                                                                         
+        mavenCentral() 
+    } 
     dependencies {
         classpath group: 'com.ullink.gradle', name: 'java-compatibility', version: '0.9'
     }
