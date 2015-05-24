@@ -1,5 +1,5 @@
 # java-compatibility
-Add java api classes to bootclasspath when sourceCompatibility is se
+Add java api classes to bootclasspath when sourceCompatibility is set
 
 # usage
 
