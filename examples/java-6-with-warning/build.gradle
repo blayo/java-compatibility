@@ -1,11 +1,9 @@
 apply plugin: 'java'
 
-// Comment this line to see the warning: [options] bootstrap class path not set in conjunction with -source 1.6
+// Uncomment this line to remove the warning: [options] bootstrap class path not set in conjunction with -source 1.6
 //apply plugin: 'java-compatibility'
 
 sourceCompatibility = 1.6
-
-version = '1.0'
 
 buildscript {
     repositories {
