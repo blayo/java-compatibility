@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+apply plugin: 'java-compatibility'
+
+// Comment this line to remove the error due to java 8 specific method 
+sourceCompatibility = 1.7 
+
+
+version = '1.0'
+
+buildscript {
+    repositories { 
+        mavenLocal()                                                                                                                         
+        mavenCentral() 
+    } 
+    dependencies {
+        classpath group: 'com.ullink.gradle', name: 'java-compatibility', version: '0.9'
+    }
+}
