@@ -22,7 +22,7 @@ class CompatibilityTest extends spock.lang.Specification {
             "jre6" == choose_java(java_versions)
     }
 
-    def "When JDK6_HOME is undefined, look at JAVA_HOME" () {
+    def "When JDK_HOME is undefined, look at JAVA_HOME" () {
         when:
             String JDK_HOME = null
             String JAVA_HOME_path = find_java(version, JDK_HOME, JAVA_HOME)
